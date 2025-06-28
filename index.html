@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Attendance Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Attendance Calculator</h1>
+
+    <div class="main-layout">
+      <!-- left side of the container-->
+      <div class="form-section">
+        <form id="attendanceForm">
+          <label for="totalLectures">Total Lectures:</label>
+          <input type="number" id="totalLectures" required />
+
+          <label for="attendedLectures">Attended Lectures:</label>
+          <input type="number" id="attendedLectures" required />
+
+          <button type="submit">Calculate Attendance</button>
+          <button type="button" id="skipPossible">Can I skip tomorrow?</button>
+
+          <div id="aiResponse"></div>
+        </form>
+      </div>
+
+      <!-- Right side of the container -->
+      <div class="chart-output-section">
+        <canvas id="atte<!--  -->ndanceChart" width="220" height="220" style="display: none;"></canvas>
+        <div id="result"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

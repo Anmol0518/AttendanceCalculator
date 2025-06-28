@@ -1,0 +1,110 @@
+/* Main page */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* container */
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  width: 850px;
+}
+
+/* "attendance calculator
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #222;
+}
+
+/* positioning*/
+.main-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+/* right side of the form*/
+.form-section {
+  width: 60%;
+}
+/*left side of the form*/
+.chart-output-section {
+  width: 40%;
+  text-align: center;
+}
+
+/* styling inputs*/
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 6px 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 6px 8px;
+  font-size: 13px;
+  background-color: #bbb;
+  color: #222;
+  border: 1px solid #888;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #999;
+}
+
+/* result popup*/
+#result {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+/* result*/
+#result.green {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+#result.red {
+  background-color: #ffe6e6;
+  color: #dc3545;
+}
+
+/* response to the question*/
+#aiResponse {
+  margin-top: 10px;
+  font-size: 13.5px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Chart */
+canvas#attendanceChart {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
